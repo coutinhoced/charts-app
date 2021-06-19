@@ -1,0 +1,60 @@
+<h4><span>General Settings</span></h4>
+
+<ag-grid-angular 
+    style="align-content: center; height: 450px; font-weight: bold; width: 470px; font-size: medium;" 
+    class="ag-theme-material grid"
+    [rowData]="rowData"
+    [columnDefs]="columnDefs" 
+    (cellClicked) = "Changed($event)"    
+    rowSelection="multiple">
+</ag-grid-angular>
+
+
+  <div style="margin-left: 20px; margin-top: 20px;">  
+    <div class="form-group row">
+      <label for="staticEmail" style="font-weight: bold;" class="col-sm-1 col-form-label">Date : </label>
+      <div class="col-sm-3">
+            <input type="text" bsDaterangepicker 
+            [bsConfig]="{ dateInputFormat: 'MMMM YYYY'}"                                  
+            #item
+            [ngModel]="datepickerModel" 
+            class="form-control button">
+      </div>
+    </div>
+    <div class="form-group row">
+        <label for="staticEmail" style="font-weight: bold;" class="col-sm-1 col-form-label">Country : </label>
+        <div class="col-sm-3">
+            <select type="text" class="form-control button" name="Countries">
+                <option   *ngFor="let c of countriesList" [value]="c">
+                    {{  c }} 
+                </option>
+            </select>
+        </div>
+      </div>
+   
+     <button  class="col-sm-3" (click)="onShowDashBoard()"  class="btn btn-primary">Next</button> 
+    
+</div>
+
+
+<!-- <div style="margin-left: 20px;" class="container">
+   <div class="row form-group">
+          <div class="col-sm-2">
+            <label>Date :</label>
+          </div>
+          <div class="col-sm-4">
+            <input type="text" bsDaterangepicker 
+            [bsConfig]="{ dateInputFormat: 'MMMM YYYY'}" 
+            (ngModelChange)="onDateChanged($event)"                     
+            #item
+            [ngModel]="datepickerModel" 
+            class="form-control button">
+        </div>
+   </div>
+   <div class="row">
+    <button (click)="onShowDashBoard()"  class="btn btn-primary">Next</button>  
+   </div>
+</div> -->
+
+
+

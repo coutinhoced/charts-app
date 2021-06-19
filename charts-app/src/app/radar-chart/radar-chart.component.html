@@ -1,0 +1,24 @@
+
+ 
+<div  style="text-align: center;">
+  <h3><span class="badge badge-pill badge-primary">Incidents Created by Month</span></h3>
+    <div  *ngIf='dataPresent' style="text-align:center;">                   
+      <div class="chart-wrapper">
+          <canvas baseChart height="210px"
+          [datasets]="radarChartData"
+          [options]="radarChartOptions"
+          [labels]="radarChartLabels"
+          [chartType]="radarChartType">
+        </canvas>
+        </div>
+      </div>       
+      <h4  class="nodataheader" *ngIf='!dataPresent'>  <span class="nodata">no data available</span>   </h4 >
+</div>
+
+       
+      
+     
+
+
+     
+   

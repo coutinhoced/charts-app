@@ -1,0 +1,31 @@
+/* .hr {
+	border-top: 1px solid #8c8b8b;
+}
+
+.nodata {
+    position: absolute;
+    text-transform: uppercase;
+    top: 40px;
+    left: 40px;
+    align-content: center;
+} */
+
+
+
+.nodata {
+    text-transform: uppercase;
+    top: 40px;
+    left: 40px;       
+}
+
+.nodataheader{
+    background-color: rgb(235, 132, 84);
+}
+
+.chartcontainer {
+    width: 100%;
+  }
+  .left, .right {
+    width: 50%;
+    float: left;
+  }

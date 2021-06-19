@@ -1,0 +1,50 @@
+[
+    {
+      "id": 1,
+      "name": "Cedric",
+      "email" : "cedric.coutinho@ust-global.com",
+      "Charts": [
+          { "ChartId" : 1, "name": "Ticket Volume By Country", 
+            "ComponentName": "DoughnutChartComponent", "Visible" : true},
+            {"ChartId" : 2, "name": "Ticket Volume by Geo Location",
+              "ComponentName": "PolarAreaChartComponent", "Visible" : true}, 
+              {"ChartId" : 3, "name": "Avg. Closure Count", 
+                "ComponentName": "AvgdayclosureChartComponent", "Visible" : true},              
+              {"ChartId" : 4, "name": "Ticket Assigned and Resolved Count", 
+                "ComponentName": "TicketassignetresolvedcountChartComponent", "Visible" : true},   
+          {"ChartId" : 5, "name": "Incidents Created by Month",
+             "ComponentName": "RadarChartComponent", "Visible" : true},         
+             {"ChartId" : 6, "name": "Ticket Status By Month",
+              "ComponentName": "TicketstatusChartComponent", "Visible" : true},
+            {"ChartId" : 7, "name": "Incidents Classification",
+               "ComponentName": "BarChartComponent", "Visible" : true},
+            {"ChartId" : 8, "name": "Dollar Impact per month", 
+                "ComponentName": "LineChartComponent", "Visible" : true}                         
+           ]      
+    },
+    {
+        "id": 2,
+        "name": "Admin",
+        "email" : "admin@ust-global.com",
+        "Charts": [
+            {  "ChartId" : 1,  "name": "Ticket Volume By Country", 
+              "ComponentName": "DoughnutChartComponent", "Visible" : false},
+              { "ChartId" : 2, "name": "Ticket Volume by Geo Location",
+                "ComponentName": "PolarAreaChartComponent", "Visible" : true},     
+                {"ChartId" : 8, "name": "Ticket Assigned and Resolved Count", 
+                  "ComponentName": "TicketassignetresolvedcountChartComponent", "Visible" : true},             
+            {"ChartId" : 3, "name": "Incidents Created by Month",
+               "ComponentName": "RadarChartComponent", "Visible" : true},
+             {"ChartId" : 4, "name": "Ticket Status By Month",
+                "ComponentName": "TicketstatusChartComponent", "Visible" : false},
+              {"ChartId" : 5, "name": "Incidents Classification",
+                 "ComponentName": "BarChartComponent", "Visible" : false},
+              { "ChartId" : 6,"name": "Dollar Impact per month", 
+                  "ComponentName": "LineChartComponent", "Visible" : false},
+                  {"ChartId" : 7, "name": "Avg. Closure Count", 
+                    "ComponentName": "AvgdayclosureChartComponent", "Visible" : true} 
+            
+                   
+        ]  
+      }
+]

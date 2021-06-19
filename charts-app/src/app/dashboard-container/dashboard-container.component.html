@@ -1,0 +1,29 @@
+<app-header></app-header>
+<!-- [ngSwitch]="ud.ComponentName" -->
+<div *ngFor="let ud of chartData; index as i;" style="display:flexbox;" >                 
+    <div *ngIf='i%2 === 0' style="width: 50%; height: 50%;border-style:ridge; border-color: goldenrod;  float:left;">
+        <div ctrl-factory comp="{{ud.ComponentName}}"></div>
+    </div>
+    <div *ngIf='i%2 !== 0' style="width: 50%; height: 50%; border-style: ridge; border-color: goldenrod; float:right;">
+        <div ctrl-factory comp="{{ud.ComponentName}}"></div>
+    </div>   
+  
+    <!-- <ng-template ngSwitchCase="DoughnutChartComponent"> 
+        <app-doughnut-chart></app-doughnut-chart>
+    </ng-template>
+    <ng-template ngSwitchCase="RadarChartComponent"> 
+        <app-radar-chart></app-radar-chart>
+    </ng-template>
+    <ng-template ngSwitchCase="BarChartComponent"> 
+       <app-bar-chart></app-bar-chart>
+    </ng-template>
+    <ng-template ngSwitchCase="LineChartComponent"> 
+        <app-line-chart></app-line-chart>
+    </ng-template>
+     <ng-template ngSwitchCase="PolarAreaChartComponent"> 
+        <app-polar-area-chart></app-polar-area-chart>
+    </ng-template>
+    <ng-template ngSwitchCase="TicketstatusChartComponent"> 
+        <app-ticketstatus-chart></app-ticketstatus-chart>
+    </ng-template>  -->
+</div>

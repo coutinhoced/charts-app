@@ -1,0 +1,41 @@
+<div  style="text-align: center;">  
+    <h3><span class="badge badge-pill badge-primary">Avg Day Closure</span></h3>
+      <div  *ngIf='incidentDataPresent'>                   
+        <div class="chart-wrapper">
+            <canvas baseChart height="280px" width="400px"
+            [datasets]="avgClosurebarChartData"
+            [labels]="avgClosurebarChartLabels"
+            [options]="avgClosurebarChartOptions"
+            [plugins]="avgClosurebarChartPlugins"
+            [legend]="avgClosurebarChartLegend"
+             [chartType]="avgClosurebarChartType">
+           </canvas>
+         </div>
+       </div>       
+     <h4  class="nodataheader" *ngIf='!incidentDataPresent'>  <span class="nodata">no data available</span>   </h4 >
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
