@@ -1,0 +1,16 @@
+<div  style="text-align: center;">  
+    <h3><span class="badge badge-pill badge-primary">Ticket Status By Month</span></h3>
+      <div  *ngIf='ticketDataPresent' style="text-align:center;">                   
+          <div class="chart-wrapper">
+            <canvas baseChart height="197px" width="280px"
+              [datasets]="ticketStatusbarChartData"
+              [labels]="ticketStatusbarChartLabels"
+              [options]="ticketStatusbarChartOptions"
+              [plugins]="ticketStatusbarChartPlugins"
+              [legend]="ticketStatusbarChartLegend"
+              [chartType]="ticketStatusbarChartType">
+            </canvas>
+          </div>
+       </div>       
+     <h4  class="nodataheader" *ngIf='!ticketDataPresent'>  <span class="nodata">no data available</span>   </h4 >
+</div>

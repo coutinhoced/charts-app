@@ -1,0 +1,23 @@
+
+<div style="text-align: center;">
+     <h3><span class="badge badge-pill badge-primary">Dollar Impact per month</span></h3>
+     <div *ngIf='dataPresent' style="text-align:center;">              
+          <div class="chart-wrapper">
+              <canvas baseChart width="210" height="146"
+                    [datasets]="lineChartData"
+                    [labels]="lineChartLabels"
+                    [options]="lineChartOptions"
+                    [colors]="lineChartColors"
+                    [legend]="lineChartLegend"
+                    [chartType]="lineChartType"
+                    [plugins]="lineChartPlugins">
+               </canvas>
+          </div>
+     </div>  
+     <h4  class="nodataheader" *ngIf='!dataPresent'>  <span class="nodata">no data available</span>   </h4 >
+</div>
+
+    
+         
+
+     

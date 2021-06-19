@@ -1,0 +1,41 @@
+    <div  style="text-align: center;">  
+      <h3><span class="badge badge-pill badge-primary">Incidents Classification</span></h3>
+        <div  *ngIf='incidentDataPresent' style="text-align:center;">                   
+          <div class="chart-wrapper">
+              <canvas baseChart height="196px" width="280px"
+              [datasets]="barChartData"
+              [labels]="barChartLabels"
+              [options]="barChartOptions"
+              [plugins]="barChartPlugins"
+              [legend]="barChartLegend"
+               [chartType]="barChartType">
+             </canvas>
+           </div>
+         </div>       
+       <h4  class="nodataheader" *ngIf='!incidentDataPresent'>  <span class="nodata">no data available</span>   </h4 >
+    </div>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,14 @@
+<div  style="text-align: center;">
+  <h3><span class="badge badge-pill badge-primary">Ticket Volume By Country</span></h3>
+
+<div *ngIf='dataPresent' style="text-align:center;">      
+     <div class="chart-wrapper">
+        <canvas baseChart height="220px" aria-orientation="horizontal" [data]="doughnutChartData"
+        [labels]="doughnutChartLabels"
+        [chartType]="doughnutChartType"
+        [options]="doughnutOptions">
+      </canvas>
+    </div>
+</div> 
+  <h4  class="nodataheader" *ngIf='!dataPresent'>  <span class="nodata">no data available</span></h4>
+</div>
